@@ -1,0 +1,176 @@
+\documentclass{thesis}
+
+
+% Settings
+\input{settings/fonts}
+\input{settings/geometry}
+
+
+
+
+
+
+\begin{document}
+
+
+% ---------- Front Matter ----------
+
+
+% Bismillah page (no page number)
+\pagenumbering{gobble}
+\input{frontmatter/bismillah}
+\clearpage
+
+
+% Title page (no page number)
+\input{frontmatter/titlepage}
+\clearpage
+
+% including pdf of defence licence. uncoment after defence 
+% \includepdf{defence_licence.pdf}
+% \clearpage
+
+
+% Start Abjad page numbering for front matter
+\pagenumbering{arabic}
+\renewcommand{\thepage}{\abjad{page}}
+\setcounter{page}{1}
+
+\input{frontmatter/declaration}
+\clearpage
+
+\input{frontmatter/dedication}
+\clearpage
+
+\input{frontmatter/acknowledgements}
+\clearpage
+
+\input{frontmatter/abstract-fa}
+\clearpage
+
+% table of contents
+\phantomsection
+
+\begin{center}
+{\fontsize{14}{16}\selectfont\textbf{فهرست مطالب}}
+\end{center}
+
+\renewcommand{\contentsname}{}  % Prevent default TOC title
+\vspace{-8em}
+\tableofcontents
+\clearpage
+
+% list of tables 
+
+\phantomsection
+
+\begin{center}
+{\BNazaninFont\fontsize{14}{16}\selectfont\textbf{فهرست جداول}}
+\end{center}
+\vspace{-7.5em}
+\renewcommand{\listtablename}{}
+\listoftables
+\clearpage
+
+%  list of images
+\begin{center}
+{\BNazaninFont\fontsize{14}{16}\selectfont\textbf{فهرست اشکال (تصاویر)}}
+\end{center}
+\vspace{-7.5em}  
+
+\renewcommand{\listfigurename}{}  
+\listoffigures
+
+\clearpage
+
+% list of charts
+
+\begin{center}
+{\BNazaninFont\fontsize{14}{16}\selectfont\textbf{فهرست نمودار}}
+\end{center}
+
+\vspace{-7.5em}
+
+\listofcharts
+
+\clearpage
+
+
+% list of abbreviations (this list is optional and you can comment it. for modifications go to thesis.cls)
+\listofabbreviations
+
+\clearpage
+% start number counting
+\pagenumbering{arabic} % numeric page numbers
+\setcounter{page}{1}   % start from 1
+\clearpage
+
+% your chapters start down below
+% example usage :
+
+% \input{directory/name of chapter (without .tex)}
+% \clearpage
+
+% intro chapter
+\input{chapters/intro}
+\clearpage
+
+%  literature review chapter
+\input{chapters/literature-review}
+\clearpage
+
+
+%  literature review chapter
+\input{chapters/research_method.tex}
+\clearpage
+
+% expriments chapter
+\input{chapters/expriments}
+\clearpage
+
+% sample chapter
+
+\input{chapters/concolusion}
+\clearpage
+
+
+\clearpage
+\renewcommand{\bibname}{منابع و مراجع}
+\bibliographystyle{apalike}
+
+\makeatletter
+\patchcmd{\thebibliography}
+  {\chapter*{\bibname}}
+  {%
+    \chapter*{\bibname}%
+    \addcontentsline{toc}{chapter}{\protect\BNazaninFont\bibname}%
+    \latin\latinfont % ← switch bibliography body to Latin
+  }
+  {}{}
+  \renewcommand{\@biblabel}[1]{\textbullet\ } % ← here is the bullet
+\makeatother
+
+\bibliography{references}
+
+
+\clearpage
+\chapter*{پیوست‌ها}                          % No chapter number
+\addcontentsline{toc}{chapter}{\protect\BNazaninFont پیوست‌ها} % TOC entry
+
+\appendix                                     % switches LaTeX to appendix mode
+
+% Include appendix files here 
+\input{appendices/appendix1.tex}
+% extra appendices like appendix2.tex and etc.
+\clearpage
+
+
+% ---------- English Abstract ----------
+\input{frontmatter/abstract-en}
+\clearpage
+
+% ---------- English Title Page ----------
+\input{frontmatter/english-titlepage}
+\clearpage
+
+\end{document}

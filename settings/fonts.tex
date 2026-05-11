@@ -1,0 +1,48 @@
+% Persian fonts
+% Persian & English fonts (LOCAL FONT FILES)
+% Font files are stored in /fonts directory
+
+
+\settextfont[
+Path=fonts/,
+Extension=.ttf,
+UprightFont=* ,
+BoldFont=*Bold
+]{BNazanin}
+
+
+\setlatintextfont[
+  Path=fonts/,
+  Extension=.ttf,
+  UprightFont=*,
+  BoldFont=*Bold,
+  ItalicFont=*Italic,
+  BoldItalicFont=*BoldItalic
+]{TimesNewRoman}
+
+
+% Special font for thesis title
+\newfontfamily\BTitr[
+Path=fonts/,
+Extension=.ttf
+]{BTitr}
+
+
+% Nastaliq font (for Bismillah page)
+\newfontfamily\IranNastaliq[
+Path=fonts/,
+Extension=.ttf
+]{IranNastaliq}
+
+
+% 
+% In fonts.tex
+\settextfont[Path=fonts/, Extension=.ttf, UprightFont=*, BoldFont=*Bold]{BNazanin}
+\newfontfamily\BNazaninFont[Path=fonts/, Extension=.ttf, UprightFont=*, BoldFont=*Bold]{BNazanin}
+
+% in settings/fonts.tex
+\newcommand{\BNazaninTableFont}{\BNazaninFont\fontsize{11}{13}\selectfont}
+
+% Line spacing (temporary, will be finalized later)
+\onehalfspacing
+
