@@ -31,6 +31,7 @@ KhatamThesisTemplate> main.pdf
 
 ## Project structure
 
+```bash
 KhatamThesisTemplate/
 ├── main.tex              % Root document
 ├── references.bib        % Bibliography file
@@ -42,6 +43,7 @@ KhatamThesisTemplate/
 ├── frontmatter           % frontmatter files including titlepage, dedicarion and etc.
 ├── images/               % All images, diagrams, plots
 └── settings              % overall settings 
+```
 
 
 
