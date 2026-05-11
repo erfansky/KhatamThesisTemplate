@@ -553,29 +553,6 @@ labelsep=space
 
 
 
-\newcommand{\vecb}[1]{\mathbf{#1}} % short command for vector
-\newcommand{\distribution}[1]{\mathcal{#1}}  % short command for distribution
-\newcommand{\listset}[1]{\mathrm{#1}} % short command for list and sets
-\newcommand{\innerproduct}[2]{\langle #1, #2 \rangle} % short for inner product
-\newcommand{\norm}[1]{\|\vecb{#1}\|_2} % short for norm
-\newcommand{\rsample}{\overset{\$}{\leftarrow}} % short for random sampling
-\newcommand{\genprocess}{\overline{\mathsf{Model}}} % short for gen process model
-\newcommand{\scheme}[1]{\mathcal{#1}} % short for schemes
-\newcommand{\lm}{\mathsf{Model}} % language model
-\newcommand{\Alg}[1]{\mathsf{#1}} % algorithm
-\newcommand{\key}[1]{\mathsf{#1}} % secret key
-\newcommand{\history}{\boldsymbol{\rho}} % prompt
-\newcommand{\negl}{\mathsf{negl}} % \negl
-\newcommand{\prf}{\mathsf{F}} % pseudo random function(PRF)
-\newcommand{\Hybrid}{\mathsf{Hyb}}  % Main hybrid command
-
-\newcommand{\Adv}{\mathbf{Adv}}   % For advantage notation
-
-\newcommand{\Fail}{\mathbf{Fail}}   % For advantage notation
-
-\newcommand{\RobFail}{\mathbf{RFail}}   % For advantage notation
-
-
 
 
 
