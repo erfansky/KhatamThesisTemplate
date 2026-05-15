@@ -39,7 +39,7 @@ KhatamThesisTemplate/
 ├── README.MD             % this file 
 ├── appendices/           % all apendix files
 ├── chapters/             % Individual chapter .tex files
-├── fonts/                % fonts used in project (don't tuch it!)
+├── fonts/                % fonts used in project (don\'t tuch it!)
 ├── frontmatter           % frontmatter files including titlepage, dedicarion and etc.
 ├── images/               % All images, diagrams, plots
 └── settings              % overall settings 
