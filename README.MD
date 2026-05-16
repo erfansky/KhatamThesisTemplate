@@ -73,7 +73,7 @@ If you improve or fix this template (e.g., updated university logo, corrected ma
 
 We would like to thank the following individuals for their valuable contributions to this project:
 
-- **Ebrahim Tahernezhad** and **Hamid Reza Montaseri** – for providing code that was adapted and used in this template.
+- **Ebrahim Tahernezhad** (https://github.com/EbrahimTahernejad) and **Hamid Reza Montaseri** (https://github.com/hrmon) – for providing code that was adapted and used in this template.
 
 Their work has been instrumental in the development of this thesis template.
 
